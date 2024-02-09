@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q&A Blog - Question 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .answer {
+            display: none;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .fadeIn {
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .next-button, .prev-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Q&A Blog - Question 4</h1>
+        
+        <div class="question">
+            <h2>Question 4:How do your setup your own server for Web hosting?</h2>
+            <button onclick="toggleAnswer(1)">Show Answer</button>
+            <p id="answer1" class="answer">
+                <h2>Before You Begin:</h2>
+    <ul>
+        <li>Assess your needs: Consider the size and complexity of your site, anticipated traffic, and your technical expertise.</li>
+        <li>Check your web connection: Ensure your web network has sufficient bandwidth and a static IP address (usually requires a business network).</li>
+        <li>Gather resources: Explore hardware options, operating systems, and web server software.</li>
+    </ul>
+
+    <h2>Steps Involved:</h2>
+    <ul>
+        <li>Select your hardware: Choose between a dedicated server, a virtual private server (VPS), or even a powerful home computer. Consider factors like processing power, memory, storage, and network connectivity.</li>
+        <li>Select an operating system: Popular choices for web servers include Linux distributions like Ubuntu or CentOS, or Windows Server. Choose one that aligns with your technical comfort and software preferences.</li>
+        <li>Install and configure the server software: This involves installing the web server software (e.g., Apache, Nginx) and configuring it to serve your site files. You may also need to set up additional software like a database server (e.g., MySQL) if your site requires it.</li>
+        <li>Set up security: Implement security measures like firewalls, strong passwords, and regular updates to protect your server from unauthorized access and vulnerabilities.</li>
+        <li>Configure your domain name: Point your domain name to your server's IP address using DNS settings.</li>
+        <li>Transfer your site files: Upload your website files and folders to the designated location on your server.</li>
+        <li>Test and troubleshoot: Ensure your website is accessible and functions properly. Address any errors or setup issues.</li>
+    </ul>
+
+    <h2>Extra Things to Consider:</h2>
+    <ul>
+        <li>Maintenance: Running your own server requires ongoing maintenance, including security updates, software management, and backups.</li>
+        <li>Performance: Optimizing your server for performance and scalability can be challenging, especially for high-traffic websites.</li>
+        <li>Costs: While self-hosting can be cheaper than paid hosting in the long run, upfront costs for hardware and software can be significant.</li>
+    </ul>
+
+    <h2>Options to Self-Hosting:</h2>
+    <ul>
+        <li>Shared hosting: A cost-effective option for small websites, but with limited control and resources.</li>
+        <li>VPS hosting: Offers more control and resources than shared hosting, but still requires some technical knowledge.</li>
+        <li>Managed hosting: Provides fully managed servers with expert support, ideal for those who prefer hands-off management.</li>
+    </ul>
+            
+            
+            </p>
+        </div>
+
+        <div class="prev-button">
+            <a href="Q&A Blog - Question 3.html" class="button">Previous Question</a>
+        </div>
+
+        <div class="next-button">
+            <a href="Q&A Blog - Question 5.html" class="button">Next Question</a>
+        </div>
+
+        <div class="prev-button">
+            <a href="main .html" class="button">Main Page</a>
+        </div>
+
+    </div>
+
+    <script>
+       
+        function toggleAnswer(questionNumber) {
+            var answer = document.getElementById('answer' + questionNumber);
+            var computedStyle = window.getComputedStyle(answer);
+    
+            if (computedStyle.display === 'none') {
+                answer.style.display = 'block';
+                answer.classList.add('fadeIn');
+            } else {
+                answer.style.display = 'none';
+            }
+        }
+    </script>
+    
+</body>
+</html>

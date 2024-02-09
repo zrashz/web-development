@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('4tos/5.jpg');
+            background-size: cover;
+            
+            background-position: center;
+        }
+        header {
+            background-color: yellow;
+            color: red;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 0;
+        }
+        main {
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            
+            padding: 20px;
+            
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        p {
+            line-height: 1.6;
+        }
+        .css-example {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .css-example h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explaining CSS</h1>
+    </header>
+    <main>
+        <div class="container">
+            <h2>What is CSS?</h2>
+            <p>CSS (Cascading Style Sheets) is a stylesheet language that controls the presentation of HTML elements on a web page. It allows web developers to define the style, layout and design of multiple web pages all at once.</p>
+
+            <h2>How does CSS work?</h2>
+            <p>CSS works by selecting HTML elements and applying styles to them. These styles can control various aspects of the element's appearance, such as color, size, font, spacing and positioning.</p>
+
+            <h2>Example of CSS:</h2>
+            <div class="css-example">
+                <h3>Styling a Heading</h3>
+                <p>To style a heading element, you can use CSS like this:</p>
+                <pre>
+                    <code>
+h1 {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+}
+                    </code>
+                </pre>
+                <p>This CSS code will make all &lt;h1&gt; headings on the page have a color of dark gray (#333), a font size of 24 pixels, and bold weight.</p>
+            </div>
+
+            <h2>Benefits of CSS:</h2>
+            <ul>
+                <li><strong>Separation of Concerns:</strong> CSS allows separation of content (HTML) and presentation (CSS), making it easier to manage and maintain large websites.</li>
+                <li><strong>Consistency:</strong> CSS enables consistent styling across multiple web pages, ensuring a unified look and feel.</li>
+                <li><strong>Flexibility:</strong> CSS provides a wide range of styling options, allowing developers to create diverse and creative designs.</li>
+            </ul>
+
+            <h2>Conclusion</h2>
+            <p>CSS is a powerful tool for web developers to control the visual presentation of web pages. By separating content from presentation, CSS enhances maintainability, flexibility, and consistency in web design.</p>
+        </div>
+    </main>
+    <footer>
+        <div class="container" style="text-align: center; padding: 2rem 0;">
+            <p>&copy; 2024 Foundation of web technologies.21CIS0011_IS106 . All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

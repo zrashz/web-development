@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q&A Blog - Question 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .answer {
+            display: none;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .fadeIn {
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .next-button, .prev-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Q&A Blog - Question 9</h1>
+        
+        <div class="question">
+            <h2>Question 9:How does HTTP empower the consistent browsing encounter we know nowadays, considering it includes sending person demands and reactions for each component on a webpage?</h2>
+            <button onclick="toggleAnswer(1)">Show Answer</button>
+            <p id="answer1" class="answer">
+                <h2>HTTP Effectiveness</h2>
+    <ul>
+        <li><strong>Client-server design:</strong> When you click a link in your browser (the client), it sends a request to a specific server hosting the content you want. This separates the concerns of displaying data (client) from storing and managing it (server).</li>
+        <li><strong>Request-response cycle:</strong> Each element on a webpage (text, image, video) requires a separate request from the client. However, HTTP allows multiple requests to be sent concurrently, so the server can work on fulfilling them simultaneously. This speeds up loading times compared to waiting for each element to be received sequentially.</li>
+        <li><strong>Caching:</strong> Browsers and servers can store frequently accessed resources locally (cache). This means subsequent requests for the same resource do not have to travel all the way to the server, further improving loading speed.</li>
+        <li><strong>HTTP versions:</strong> Newer versions like HTTP/2 introduced features like header compression and request prioritization, further optimizing data transfer and webpage loading.</li>
+    </ul>
+            
+            
+            </p>
+        </div>
+
+        <div class="prev-button">
+            <a href="Q&A Blog - Question 8.html" class="button">Previous Question</a>
+        </div>
+
+        <div class="next-button">
+            <a href="Q&A Blog - Question 10.html" class="button">Next Question</a>
+        </div>
+
+        
+        <div class="prev-button">
+            <a href="main .html" class="button">Main Page</a>
+        </div>
+
+    </div>
+
+    <script>
+       
+        function toggleAnswer(questionNumber) {
+            var answer = document.getElementById('answer' + questionNumber);
+            var computedStyle = window.getComputedStyle(answer);
+    
+            if (computedStyle.display === 'none') {
+                answer.style.display = 'block';
+                answer.classList.add('fadeIn');
+            } else {
+                answer.style.display = 'none';
+            }
+        }
+    </script>
+    
+</body>
+</html>

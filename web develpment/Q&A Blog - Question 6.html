@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q&A Blog - Question 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .answer {
+            display: none;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .fadeIn {
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .next-button, .prev-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Q&A Blog - Question 6</h1>
+        
+        <div class="question">
+            <h2>Question 6:What is the most excellent sort of web for somebody who works from domestic and needs dependable, high-speed get to for video calls, expansive record downloads, and spilling media?</h2>
+            <button onclick="toggleAnswer(1)">Show Answer</button>
+            <p id="answer1" class="answer">
+                <h2>Factors to Consider:</h2>
+                <ul>
+                    <li><strong>Speed:</strong> Aim for at least 25 Mbps download and 3 Mbps upload for tasks like video calls and streaming media.</li>
+                    <li><strong>Reliability:</strong> Look for a stable connection with minimal dropouts, considering factors like regional blackouts and provider track record.</li>
+                    <li><strong>Budget:</strong> Different internet types come with varying costs. Fiber offers high speeds but can be expensive, while cable and DSL are more budget-friendly options.</li>
+                    <li><strong>Accessibility:</strong> Not all internet types are available in every area, so check with local providers to see what options are available.</li>
+                </ul>
+            
+                <h2>Common Internet Types:</h2>
+                <ul>
+                    <li><strong>Fiber:</strong> The fastest and most reliable option, ideal for heavy data users and multi-user households. However, it may not be widely available and can be costly.</li>
+                    <li><strong>Cable:</strong> Offers good speeds and widespread availability, but may experience slowdowns during peak usage hours.</li>
+                    <li><strong>DSL:</strong> A good option for moderate speeds and budgets, but availability and speed can vary depending on location and distance from the provider's infrastructure.</li>
+                    <li><strong>Satellite:</strong> Widely available even in remote areas, but suffers from high latency (delay) and data caps, making it less suitable for real-time applications like video calls.</li>
+                    <li><strong>5G Home Internet:</strong> This emerging technology offers high speeds and low latency, but is still limited in availability and coverage.</li>
+                </ul>
+            
+            
+            </p>
+        </div>
+
+        <div class="prev-button">
+            <a href="Q&A Blog - Question 5.html" class="button">Previous Question</a>
+        </div>
+
+        <div class="next-button">
+            <a href="Q&A Blog - Question 7.html" class="button">Next Question</a>
+        </div>
+
+        <div class="prev-button">
+            <a href="main .html" class="button">Main Page</a>
+        </div>
+
+    </div>
+
+    <script>
+       
+        function toggleAnswer(questionNumber) {
+            var answer = document.getElementById('answer' + questionNumber);
+            var computedStyle = window.getComputedStyle(answer);
+    
+            if (computedStyle.display === 'none') {
+                answer.style.display = 'block';
+                answer.classList.add('fadeIn');
+            } else {
+                answer.style.display = 'none';
+            }
+        }
+    </script>
+    
+</body>
+</html>

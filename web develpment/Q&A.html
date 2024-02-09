@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q&A Blog - Question 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: whitesmoke;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: lightseagreen;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: blue;
+        }
+
+        .answer {
+            display: none;
+            padding: 10px;
+            background-color: wheat;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .fadeIn {
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .next-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: blue;
+            color: wheat;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: navy;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Q&A Blog - Question 1</h1>
+        
+        <div class="question">
+            <h2>Question 1: Briefly explain the positive impacts and negative impacts of using Web 2.0 technologies by students for their day-to-day works.</h2>
+            <button onclick="toggleAnswer(1)">Show Answer</button>
+            <p id="answer1" class="answer">
+                <div>
+                    <p><strong>Positive Impacts:</strong></p>
+                    <ul>
+                        <li>Improved Collaboration and Communication: Web 2.0 apparatuses like Wikis, Google Docs, and online gatherings empower realtime collaboration on ventures bunch dialogs and information sharing cultivating dynamic learning and collaboration.</li>
+                        <li>Get to to Data and Different Learning Assets: Understudies can get to a endless store of instructive substance mixed media assets and master conclusions past conventional reading material improving their understanding and viewpoints.</li>
+                        <li>Advancement of Computerized Education Abilities: Locks in with Web 2.0 advances prepares understudies with profitable advanced proficiency abilities like basic considering, substance creation and online communication, planning them for the advanced world.</li>
+                        <li>Expanded Engagement and Inspiration: Intuitively highlights, interactive media components and social perspectives of Web 2.0 apparatuses can make learning more locks in and pleasant persuading understudies to investigate themes encourage.</li>
+                        <li>Personalized Learning: Web 2.0 stages can cater to person learning styles and paces permitting understudies to investigate themes at their claim level and interface.</li>
+                    </ul>
+                    <p><strong>Negative Impacts:</strong></p>
+                    <ul>
+                        <li>Distraction and Multitasking: Constant notifications, easily accessible social media and engaging features can distract students from their academic work, affecting their focus and productivity.</li>
+                        <li>Data Overburden and Validity Issues: The tremendous sum of data online can be overpowering and understudies might battle to survey the validity of sources driving to potential deception and predisposition.</li>
+                        <li>Cyberbullying and Online Security Dangers: Web 2.0 stages can be breeding grounds for cyberbullying and online badgering, affecting students' well-being and making a antagonistic learning environment..</li>
+                        <li>Computerized Partition and Value Concerns: Unequal get to to innovation and web network can compound existing instructive incongruities and restrain openings for certain understudy bunches.</li>
+                        <li>Technophobic Inclinations and Security Concerns: A few understudies might feel overpowered or anxious approximately utilizing innovation and security concerns related to information collection and sharing can be a obstruction.</li>
+                    </ul>
+                </div>
+                        </p>
+                    </div>
+            
+            
+            
+            </p>
+        </div>
+
+        <div class="next-button">
+            <a href="Q&A Blog - Question 2.html" class="button">Next Question</a>
+        </div>
+
+    </div>
+
+    <script>
+       
+        function toggleAnswer(questionNumber) {
+            var answer = document.getElementById('answer' + questionNumber);
+            var computedStyle = window.getComputedStyle(answer);
+    
+            if (computedStyle.display === 'none') {
+                answer.style.display = 'block';
+                answer.classList.add('fadeIn');
+            } else {
+                answer.style.display = 'none';
+            }
+        }
+    </script>
+    
+</body>
+</html>

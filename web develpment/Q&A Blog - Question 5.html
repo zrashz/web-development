@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q&A Blog - Question 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .answer {
+            display: none;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .fadeIn {
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .next-button, .prev-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid whitesmoke;
+        }
+        th {
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Q&A Blog - Question 5</h1>
+        
+        <div class="question">
+            <h2>Question 5:Discuss the advantages and disadvantages of Static vs. Dynamic Web Pages.</h2>
+            <button onclick="toggleAnswer(1)">Show Answer</button>
+            <p id="answer1" class="answer">
+                
+                <h2>Static Web Pages:</h2>
+                <table>
+                    <tr>
+                        <th>Advantages</th>
+                        <th>Disadvantages</th>
+                    </tr>
+                    <tr>
+                        <td>Effortlessness: Easier to code and maintain due to minimal technical complexities.</td>
+                        <td>Constrained interactivity: Offers a passive user experience with minimal engagement features.</td>
+                    </tr>
+                    <tr>
+                        <td>Speed: Load faster as content is pre-written and doesn't require real-time generation.</td>
+                        <td>Content updates: Updating content requires manual changes to each individual page.</td>
+                    </tr>
+                    <tr>
+                        <td>Cost-effective: No need for complex backend infrastructure or ongoing server-side processing.</td>
+                        <td>Personalization: Cannot personalize content based on user preferences or behavior.</td>
+                    </tr>
+                    <tr>
+                        <td>Security: Less vulnerable to hacking due to the absence of dynamic elements and scripts.</td>
+                        <td>Scalability: Difficult to scale for large amounts of content or user traffic.</td>
+                    </tr>
+                    <tr>
+                        <td>SEO-friendly: Search engines can easily crawl and index static content.</td>
+                        <td>Not ideal for: Complex applications, e-commerce stores, social media platforms, or frequently updated content.</td>
+                    </tr>
+                </table>
+            
+                <h2>Dynamic Web Pages:</h2>
+                <table>
+                    <tr>
+                        <th>Advantages</th>
+                        <th>Disadvantages</th>
+                    </tr>
+                    <tr>
+                        <td>Interactivity: Allows for user interaction with forms, comments, live updates, and dynamic content.</td>
+                        <td>Complexity: Requires more development and maintenance effort due to server-side scripting and databases.</td>
+                    </tr>
+                    <tr>
+                        <td>Personalization: Can personalize content based on user preferences, location, or past behavior.</td>
+                        <td>Speed: Can load slower due to real-time content generation and processing.</td>
+                    </tr>
+                    <tr>
+                        <td>Scalability: Can easily scale to handle large amounts of content and user traffic.</td>
+                        <td>Cost: May require additional resources for server infrastructure and development expertise.</td>
+                    </tr>
+                    <tr>
+                        <td>Flexibility: More flexible and adaptable to different site features and functionalities.</td>
+                        <td>Security: Increased risk of vulnerabilities due to dynamic elements and scripts.</td>
+                    </tr>
+                    <tr>
+                        <td>Ideal for: Complex applications, e-commerce stores, social media platforms, and frequently updated content.</td>
+                        <td>SEO: Dynamic content can pose challenges for search engine optimization.</td>
+                    </tr>
+                </table>
+            
+            </p>
+        </div>
+
+        <div class="prev-button">
+            <a href="Q&A Blog - Question 4.html" class="button">Previous Question</a>
+        </div>
+
+        <div class="next-button">
+            <a href="Q&A Blog - Question 6.html" class="button">Next Question</a>
+        </div>
+
+        <div class="prev-button">
+            <a href="main .html" class="button">Main Page</a>
+        </div>
+
+    </div>
+
+    <script>
+       
+        function toggleAnswer(questionNumber) {
+            var answer = document.getElementById('answer' + questionNumber);
+            var computedStyle = window.getComputedStyle(answer);
+    
+            if (computedStyle.display === 'none') {
+                answer.style.display = 'block';
+                answer.classList.add('fadeIn');
+            } else {
+                answer.style.display = 'none';
+            }
+        }
+    </script>
+    
+</body>
+</html>

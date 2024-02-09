@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q&A Blog - Question 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .answer {
+            display: none;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .fadeIn {
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .next-button, .prev-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Q&A Blog - Question 7</h1>
+        
+        <div class="question">
+            <h2>Question 7:With so numerous web browsers accessible, how do I select the proper one for me?</h2>
+            <button onclick="toggleAnswer(1)">Show Answer</button>
+            <p id="answer1" class="answer">
+                <h2>Factors to Consider:</h2>
+    <ul>
+        <li><strong>Features:</strong> Consider speed, performance, and whether the browser prioritizes privacy or offers built-in security features.</li>
+        <li><strong>Security and Privacy:</strong> Look for browsers with robust security measures, such as built-in protection features.</li>
+        <li><strong>Extensions and Add-ons:</strong> Evaluate the availability and variety of extensions and add-ons that can enhance your browsing experience.</li>
+        <li><strong>Cross-Device Compatibility:</strong> Choose a browser that seamlessly works across different devices, including computers, phones, and tablets.</li>
+    </ul>
+
+    <h2>Additional Factors:</h2>
+    <ul>
+        <li><strong>Ease of Use:</strong> Consider the user-friendliness of the browser. Some browsers may have a steeper learning curve than others.</li>
+        <li><strong>Resource Usage:</strong> If you have limited resources like RAM or storage space, opt for a browser that is less resource-intensive.</li>
+        <li><strong>Brand Preference:</strong> If you have a preference for a specific brand, such as Google or Microsoft, you may choose their respective browsers.</li>
+    </ul>
+            
+            
+            </p>
+        </div>
+
+        <div class="prev-button">
+            <a href="Q&A Blog - Question 6.html" class="button">Previous Question</a>
+        </div>
+
+        <div class="next-button">
+            <a href="Q&A Blog - Question 8.html" class="button">Next Question</a>
+        </div>
+
+        <div class="prev-button">
+            <a href="main .html" class="button">Main Page</a>
+        </div>
+
+    </div>
+
+    <script>
+       
+        function toggleAnswer(questionNumber) {
+            var answer = document.getElementById('answer' + questionNumber);
+            var computedStyle = window.getComputedStyle(answer);
+    
+            if (computedStyle.display === 'none') {
+                answer.style.display = 'block';
+                answer.classList.add('fadeIn');
+            } else {
+                answer.style.display = 'none';
+            }
+        }
+    </script>
+    
+</body>
+</html>

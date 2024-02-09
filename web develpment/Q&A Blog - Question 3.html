@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q&A Blog - Question 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .answer {
+            display: none;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .fadeIn {
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .next-button, .prev-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Q&A Blog - Question 3</h1>
+        
+        <div class="question">
+            <h2>Question 3:Explain the personal attributes that are required for UI Developer.</h2>
+            <button onclick="toggleAnswer(1)">Show Answer</button>
+            <p id="answer1" class="answer">
+                <h2>Visual Mastermind:</h2>
+                <ul>
+                    <li>You ought to be able to interpret thoughts and information into visually engaging and intuitive interfacing.</li>
+                </ul>
+            
+                <h2>Problem-Solver:</h2>
+                <ul>
+                    <li>You'll be able to analyze complex user needs into meaningful design solutions.</li>
+                </ul>
+            
+                <h2>Open to Feedback:</h2>
+                <ul>
+                    <li>Embrace critiques and utilize them to refine your designs iteratively.</li>
+                </ul>
+            
+                <h2>Collaborative and Communicative:</h2>
+                <ul>
+                    <li>Team Player: You work effectively with designers, developers, and other stakeholders.</li>
+                    <li>Excellent Communicator: You clearly explain technical concepts to non-technical audiences.</li>
+                    <li>Active Listener: You understand user needs and pain points through effective listening.</li>
+                </ul>
+            
+                <h2>Versatile and Driven:</h2>
+                <ul>
+                    <li>Lifelong Learner: You stay updated with the latest UI trends, technologies, and best practices.</li>
+                    <li>Self-Motivated: You take initiative and ownership of your projects.</li>
+                    <li>Resilient: You bounce back from challenges and learn from mistakes.</li>
+                </ul>
+            
+                <h2>Additional Properties:</h2>
+                <ul>
+                    <li>Detail Oriented: You ensure pixel-perfect interfaces that are free of errors.</li>
+                    <li>Sympathetic: You understand user viewpoints and design for their needs.</li>
+                    <li>Organized and Efficient: You manage your time effectively and meet deadlines.</li>
+                </ul>
+            
+            
+            </p>
+        </div>
+
+        <div class="prev-button">
+            <a href="Q&A Blog - Question 2.html" class="button">Previous Question</a>
+        </div>
+
+        <div class="next-button">
+            <a href="Q&A Blog - Question 4.html" class="button">Next Question</a>
+        </div>
+
+        <div class="prev-button">
+            <a href="main .html" class="button">Main Page</a>
+        </div>
+
+    </div>
+
+    <script>
+       
+        function toggleAnswer(questionNumber) {
+            var answer = document.getElementById('answer' + questionNumber);
+            var computedStyle = window.getComputedStyle(answer);
+    
+            if (computedStyle.display === 'none') {
+                answer.style.display = 'block';
+                answer.classList.add('fadeIn');
+            } else {
+                answer.style.display = 'none';
+            }
+        }
+    </script>
+    
+</body>
+</html>
